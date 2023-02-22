@@ -28,8 +28,20 @@ let add = function (param1, param2) {
 add(1,2);
 
 */
+//first task
+myFunction =() => {
+  return "Function was invoked";}
+console.log(myFunction())
 
 
+//second task
+let anotherFunction =(param) => param;
+console.log(anotherFunction(12));
+
+
+//third task
+let add =(param1,param2) =>param1+param2;
+console.log(add(20,30))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task: Rock, Paper, Scissors - Let's play against the computer! 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -51,4 +63,16 @@ Use the game function below to do the following:
 
 function game(user, computer){
     /*add your code here*/
+    if (user === computer) {
+      return "it's a tie";
+    } else if (user === "rock" && computer === "paper") {
+      return "you lose!";
+    } else if (user === "paper" && computer === "scissors") {
+      return "you lose!";
+    } else if (user === "scissors" && computer === "rock") {
+      return "you lose!";
+    } else {
+      return "you win!";
+    }
 }
+console.log(game("rock","scissor"))
