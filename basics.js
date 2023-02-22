@@ -8,6 +8,8 @@ Do the following:
 
    HINT: look up the Number method / Raadi Number Method wax la dhaho
 */
+var x = "1999";
+console.log(typeof (Number)(x));
 
 
 /*
@@ -19,7 +21,15 @@ Do the following:
    3. Else just print 'So moody!' / Hadii kale 'So Moody!' soo saar.
 
 */
-
+const prompt = require("prompt-sync")({sigint:true });
+let md = prompt("what is your current mood?");
+if(md === "happy"){
+   console.log("Yay mee too!");
+}else if(md === "sad"){
+   console.log("Aw cheer up!");
+}else{
+   console.log("so moody!");
+};
 
 /*
 Task: Odd or Even / kisi ama dhaban
@@ -30,11 +40,16 @@ Adigoo 'if/else' isticmaalaayo hubi in nambar uu yahay 'kisi ama dhaban', kadi c
 
 */
 
-var num = 16; // You can change this number! / Number-kaan ku bilow
+var num = 17; // You can change this number! / Number-kaan ku bilow
 
 // write your conditions here / Code-kaada halkaan ku qor
 
-
+var rem = (num % 2);
+if (rem == 0) {
+   console.log(num+ ' is even');
+} else {
+   console.log(num+' is odd');
+};
 
 
 
@@ -92,6 +107,17 @@ It's okay for it to be slow.
 
 
 */
+for(let i=1;i<=100;i++){
+   if(i%3 === 0) {
+      console.log("Fizz");
+   } else if(i%5 === 0){
+      console.log("buzz")
+   }else if(i%3===0 && i%5 ===0){
+      console.log("Fizzbuzz")
+   }else{
+      console.log(i)
+   }
+}
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
@@ -107,6 +133,6 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+function vowelCounter(vowels) {
+ 
 }
